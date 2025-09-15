@@ -1,0 +1,139 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0a4d8c;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Seções principais */
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    text-align: center;
+    color: #0a4d8c;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Seção de Showcase (Imagens) */
+.showcase {
+    text-align: center;
+}
+
+.showcase figure {
+    margin: 20px 0;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.showcase img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.showcase figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Lista de funcionalidades */
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.1em;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+/* Seção de Instalação */
+.installation ol {
+    padding-left: 20px;
+}
+
+.installation li {
+    margin-bottom: 10px;
+}
+
+/* Botão de Download */
+.download-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer a {
+    color: #0a4d8c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
