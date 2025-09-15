@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Lembrete de Pausa",
+    "version": "1.0.0",
+    "description": "Uma extensão simples para lembrar você de fazer uma pausa a cada 25 minutos.",
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "180": "icons/icon180.png",
+      "192": "icons/icon192.png"
+    },
+    "action": {
+      "default_title": "Lembrete de Pausa",
+      "default_popup": "src/popup/popup.html"
+    },
+    "background": {
+      "service_worker": "src/background/service-worker.js"
+    },
+    "permissions": [
+      "storage",
+      "alarms",
+      "notifications" 
+    ]
+  }

@@ -1,0 +1,62 @@
+
+body {
+    width: 280px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    color: #0a4d8c;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+
+  p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+
+  #startTimerBtn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  }
+
+  #startTimerBtn:hover {
+    background-color: #0056b3;
+  }
+
+  #startTimerBtn:active {
+    transform: scale(0.98);
+  }
+  
+  #startTimerBtn:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+    color: #666;
+  }
+  
+  #status {
+    margin-top: 20px;
+    min-height: 22px;
+    font-size: 0.9em;
+    color: #0a4d8c;
+    font-weight: bold;
+  }
