@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  e2e:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: my-extension-e2e:latest # Nome da imagem
+    environment:
+      # Garante que o Playwright use os reporters corretos no CI/Container
+      - CI=true 
+    volumes:
+      # Monta o volume para que o relatório e os arquivos de build sejam acessíveis localmente
+      - .:/app
+      # Cache do npm (opcional, mas recomendado para builds mais rápidos)
+      - /app/node_modules 
+    working_dir: /app
+    # Executa os testes E2E
+    command: npm run test:e2e 
+    # shm_size é essencial para evitar falhas do Chromium dentro do container
+    shm_size: '2gb'
